@@ -28,7 +28,7 @@ public class App
     public static void main( String[] args )
     {
     	Undertow server = Undertow.builder()
-                .addHttpListener(8080, "10.195.7.196")
+                .addHttpListener(8080, "localhost")
                 .setHandler(getUndertowRouter()).build();
         server.start();
 
